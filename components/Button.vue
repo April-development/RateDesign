@@ -6,6 +6,7 @@
 
 <style scoped lang="sass">
 @import "assets/colors"
+@import assets/breakpoints
 .button
   color: white
 
@@ -19,6 +20,6 @@
     background-color: $black-90
   &:disabled
     background-color: $black-40
-  @media (min-width: 414px)
+  @media (min-width: $ph)
     width: 384px
 </style>
