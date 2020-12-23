@@ -14,7 +14,7 @@ export default {
   css: [],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: [],
+  plugins: ['@/plugins/vue-messenger'],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
@@ -33,7 +33,13 @@ export default {
   ],
 
   styleResources: {
-    sass: ['@/assets/default.sass', '@/assets/colors.sass']
+    sass: [
+      '@/assets/default.sass',
+      '@/assets/colors.sass',
+      '@/assets/global.sass',
+      '@/assets/input-group.sass',
+      '@/assets/button.sass'
+    ]
   },
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)

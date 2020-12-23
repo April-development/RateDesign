@@ -8875,6 +8875,11 @@ vue-loader@^15.9.5:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
+vue-messenger@^2.3.3:
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/vue-messenger/-/vue-messenger-2.3.3.tgz#acba2332108e121bce30f2523a2f71a640db3a7a"
+  integrity sha512-Z+a54WsxiuKXbIaWrC47UPI/hOMsfLAlbM50iZPbpIQ9p8gD/tHPSS9gNhRoQMT0ZifzEN6lMqnoe9c+pbc8sQ==
+
 vue-meta@^2.4.0:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/vue-meta/-/vue-meta-2.4.0.tgz#a419fb4b4135ce965dab32ec641d1989c2ee4845"
