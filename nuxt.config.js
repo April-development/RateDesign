@@ -2,6 +2,9 @@ export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
     title: 'rate-design',
+    htmlAttrs: {
+      lang: 'en'
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -35,10 +38,10 @@ export default {
   styleResources: {
     sass: [
       '@/assets/default.sass',
-      '@/assets/colors.sass',
+      '@/assets/_colors.sass',
       '@/assets/global.sass',
-      '@/assets/input-group.sass',
-      '@/assets/button.sass'
+      '@/assets/breakpoint.sass',
+      '@/assets/auth.sass'
     ]
   },
 
