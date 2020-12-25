@@ -3,6 +3,8 @@
 
 body
   background-color: $grey
+  @media (max-width: $ph)
+    background-color: white
 
 .bottom-question
   margin-top: 48px
@@ -18,7 +20,7 @@ body
   padding: 32px 104px 40px
   margin-top: 186px
 
-  max-width: 384px
+  width: 384px
   background-color: white
 
   border-radius: 10px
@@ -31,6 +33,7 @@ body
     margin-top: 0
     padding: 78px 16px 17px
     height: 100%
+    box-shadow: none
   &__title
     margin-bottom: 48px
 
