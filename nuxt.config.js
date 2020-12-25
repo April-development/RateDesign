@@ -3,7 +3,7 @@ export default {
   head: {
     title: 'rate-design',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'ru'
     },
     meta: [
       { charset: 'utf-8' },
@@ -13,18 +13,15 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
   server: {
-    port: 8080, // default: 3000
     host: '0.0.0.0' // default: localhost
   },
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [],
 
-  // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
+  env: {
+    API_URL: process.env.API_URL || 'http://localhost:5000'
+  },
   plugins: ['@/plugins/vue-messenger'],
-
-  // Auto import components (https://go.nuxtjs.dev/config-components)
-  components: true,
-
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
     // https://go.nuxtjs.dev/typescript
@@ -49,7 +46,9 @@ export default {
   },
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
-  axios: {},
+  axios: {
+    baseURL: process.env.API_URL || 'http://localhost:5000'
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {}
